@@ -1,20 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+}
+html,body {
   box-sizing: border-box;
   font-family: 'Calibri';
-}
-body {
+  background-color: #3cf1e8;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
   /* background-image: linear-gradient(135deg, #8ac1ef, #ca6ce9, #8ac1ee,#e93356);
   animation:gradient 5s ease infinite;
   background-size: 400% 400%; */
-  width: 100%;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 /* @keyframes gradient {
   0% {
       background-position: 0% 50%;
@@ -29,57 +29,19 @@ body {
 /* ------------------------------ *\
                   MAIN CONTAINER
 \* ------------------------------ */
-/* .navbar {
-  background-color: #333;
-  height: 30px;
-  max-width: 370px;
-  margin-bottom: 20px;
-}
-.navbar ul {
-  display: flex;
-}
-.navbar ul li {
-  display: inline-block;
-  padding: 0 15px;
-  height: 30px;
-  line-height: 30px;
-  cursor: pointer;
-}
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: lighter;
-  display: block;
-  padding: 0 10px;
-} */
-/* .navbar i {
-  margin-left: 10px;
-} */
 
-/* .navbar ul li a:hover {
-  color: #d4d4d7;
-  transition: background 0.3s;
-}
-.navbar .active {
-  background-color: blue;
-  transition: all 0.3s ease;
-} */
 .container {
-  /* position: relative; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-end;
-  gap: 60px;
+  gap: 20px;
+  max-width: 870px;
+  min-width: 100vw;
+  border-radius: 10px;
   background-image: linear-gradient(135deg, aqua, orange);
   animation: gradient1 5s ease infinite;
   background-size: 400% 400%;
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  padding: 20px 10px;
-  /* border-radius: 10px; */
-  max-width: 870px;
-  min-height: 100vh;
-    
 }
 @keyframes gradient1 {
   0% {
@@ -92,9 +54,6 @@ body {
       background-position: 0% 50%;
   }
 }
-/* ====================== *\
-          NAVBAR CONTAINER
-\* ====================== */
 
 /* ------------------------------ *\
                   IMAGE CONTAINER
@@ -120,6 +79,7 @@ body {
 }
 .display-word {
   display: flex;
+  
   justify-content: center;
   gap: 10px;
   align-items: center;
@@ -143,12 +103,18 @@ body {
   background: #ff0000;
   color: aliceblue;
 }
+.game-content {
+  padding: 20px;
+}
 .game-content h3 {
+  
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
 }
-.game-content h3 b {
+.game-content b {
   font-weight: lighter;
+  padding: 0 10px;
   text-transform: lowercase;
 }
 .game-content .hint b {
@@ -171,7 +137,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
   gap: 5px;
 }
 .keyboard button {
@@ -270,11 +235,22 @@ body {
 .modal-content button:hover {
   background: lightsteelblue;
 }
-
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-text {
   text-align: center;
   color: #333;
-  font-size: 14px;
+  font-size: 12px;
+  margin-top: 20px
+}
+.footer-text {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  margin-top: 20px;
 }
 /* ------------------------------ *\
                           MOBILE
@@ -283,6 +259,7 @@ body {
   .container {
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
   }
 }
 
