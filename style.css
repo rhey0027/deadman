@@ -29,14 +29,51 @@ body {
 /* ------------------------------ *\
                   MAIN CONTAINER
 \* ------------------------------ */
+/* .navbar {
+  background-color: #333;
+  height: 30px;
+  max-width: 370px;
+  margin-bottom: 20px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: lighter;
+  display: block;
+  padding: 0 10px;
+} */
+/* .navbar i {
+  margin-left: 10px;
+} */
+
+/* .navbar ul li a:hover {
+  color: #d4d4d7;
+  transition: background 0.3s;
+}
+.navbar .active {
+  background-color: blue;
+  transition: all 0.3s ease;
+} */
 .container {
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 60px;
   background-image: linear-gradient(135deg, aqua, orange);
   animation: gradient1 5s ease infinite;
-  background-size: 450% 450%;
+  background-size: 400% 400%;
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   padding: 40px 20px;
   border-radius: 10px;
@@ -52,6 +89,20 @@ body {
   100% {
       background-position: 0% 50%;
   }
+}
+/* ====================== *\
+          NAVBAR CONTAINER
+\* ====================== */
+
+/* ------------------------------ *\
+                  IMAGE CONTAINER
+\* ------------------------------ */
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .image-content img {
   max-width: 180px;
@@ -215,10 +266,16 @@ body {
 .modal-content button:hover {
   background: lightsteelblue;
 }
+
+.footer {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
 /* ------------------------------ *\
                           MOBILE
 \* ------------------------------ */
-@media(max-width: 782px) {
+@media(max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
